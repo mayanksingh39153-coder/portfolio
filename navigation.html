@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            border: 2px solid black;
+            color: white;
+            background-color: black;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2em;
+            border-bottom: 5px solid black;
+            background-color: black;
+        }
+
+        nav strong {
+            color: beige;
+            font-size: 22px;
+        }
+
+        nav a {
+            margin-left: 1em;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        #about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            text-align: center;
+        }
+
+
+
+        #about h2 {
+            font-size: 32px;
+            opacity: 0;
+            animation: fade 2s ease-out forwards;
+        }
+
+        #about p {
+            font-size: 20px;
+            max-width: 500px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fade 3s ease-out forwards;
+        }
+
+        #work h2,
+        #project h2 {
+            font-size: 30px;
+        }
+
+        .work-box {
+            padding: 1.5rem;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            transition: transform .3s;
+            font-size: 18px;
+        }
+
+        .work-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .work-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .contact-box {
+            padding: 1.5rem;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            transition: transform .3s;
+            font-size: 18px;
+        }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .projects {
+            padding: 1.5rem;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            transition: transform .3s;
+            font-size: 18px;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        footer {
+            border: 2px solid black;
+            color: white;
+            background-color: black;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Frontend Developer
+    </header>
+
+    <nav>
+        <strong>Mayank Singh Phartyal</strong>
+        <div>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#project">Project</a>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            `
+            <img src="https://wallpaperaccess.com/full/17755496.jpg" alt="Profile Image" height="500px" width="750px"
+                align="left">
+
+            <a href="block.html"><button style="font-size: 20PX;">CLICK ME</button></a>
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    Hey there ! I am Mayank singh right now I am pursuing my btech CSE degree from st andrews of
+                    institute of technology and management <br>
+                    I am a technology enthusiastic new technologies and this cyber world excites me I love to learn
+                    about
+                    the new innovations,developments and advancement in IT sector. <br>
+                    I am learning coding and hoping to build a future within right now I am searching for the right
+                    domain for me to work in short I am exploring right now and searching my interests so I can turn it
+                    up as my profession in future <br>
+                    I know C , HTML-CSS and learning javascript . Not at mastery level but at a good considerble level.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="work">
+            <h2>Work</h2>
+
+            <div class="work-container">
+
+                <div class="work-box">
+                    <h3>My Work</h3>
+                    <p>I am a Software Engineer</p>
+                </div>
+
+                <div class="work-box">
+                    <h3>My Work</h3>
+                    <p>I am a Full Stack Developer</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h3>contact</h3>
+             <div class="contact-container">
+                <div class="contact-box">
+            <p>EMAIL : thebest07@gmail.com <br>
+                PHONE NO : 987654321
+            </p>
+            </div>
+            </div>
+        </section>
+
+
+        <section id="project">
+            <h2>Projects</h2>
+            <p style="font-size: 20px;">A website where AI tells about the health care and read your report </p>
+        </section>
+
+
+    </main>
+    <footer>
+        THANK YOU
+    </footer>
+</body>
+
+</html>
